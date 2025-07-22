@@ -176,4 +176,41 @@
     font-size: 6rem;
     font-weight: 100;
   }
+
+  @include respond(tab-port) {
+    height: auto;
+
+    &__side {
+      height: auto;
+      position: relative;
+      border-radius: 0.3rem;
+      overflow: hidden;
+
+      &--back {
+        transform: rotateY(0);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    //BACK SIDE STYLING
+    &__cta {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      text-align: center;
+    }
+
+    &__price-box {
+      margin-bottom: 8rem;
+    }
+
+    &__price-value {
+      font-size: 6rem;
+    }
+  }
 }
