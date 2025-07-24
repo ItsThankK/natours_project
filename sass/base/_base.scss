@@ -13,25 +13,21 @@ html {
   //1800px+
   @include respond(big-desktop) {
     font-size: 75%;
-    background-color: green;
   }
 
   //width < 1200px?
   @include respond(tab-land) {
     font-size: 56.25%;
-    background-color: red;
   }
 
   @include respond(tab-port) {
     //width < 900px?
     font-size: 50%; //1rem = 8px, 8/16 = 50%
-    background-color: blue;
   }
 
   @include respond(phone) {
     //width < 600px?
     font-size: 31.25%; //5px
-    background-color: yellow;
   }
 }
 
@@ -42,4 +38,9 @@ body {
   @include respond(tab-port) {
     padding: 0;
   }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
 }

@@ -177,7 +177,9 @@
     font-weight: 100;
   }
 
-  @include respond(tab-port) {
+  // @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em),
+  only screen and (hover: none) {
     height: auto;
     border-radius: 0.3rem;
     background-color: $color-white;
@@ -211,7 +213,7 @@
       transform: translate(0);
       width: 100%;
       text-align: center;
-      padding: 7rem 4rem 4rem 4rem ;
+      padding: 7rem 4rem 4rem 4rem;
     }
 
     &__price-box {
