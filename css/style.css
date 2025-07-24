@@ -705,7 +705,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media (min-resolution: 192dpi) and (min-width: 600px) {
+@media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px) {
   .header {
     background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
   }
