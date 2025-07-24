@@ -4,11 +4,14 @@
   "description": "Landing page for natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass sass/main.scss css/style.css -w"
+    "watch:sass": "sass sass/main.scss css/style.css -w",
+    "compile:sass": "sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css"
   },
   "author": "Neibagha Kingsway ThankGod",
   "license": "ISC",
   "devDependencies": {
+    "concat": "^1.0.3",
     "sass": "^1.89.2"
   }
 }
