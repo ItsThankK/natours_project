@@ -2,10 +2,10 @@
   height: 95vh;
   background-image: linear-gradient(
       to right,
-      rgba($color-primary-light, .8),
-      rgba($color-primary-dark, .8)
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
     ),
-    url(../img/hero.jpg);
+    url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
@@ -14,8 +14,17 @@
   justify-content: center;
   align-items: center;
 
+  @media (min-resolution: 192dpi) and (min-width: 600px) {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)
+      ),
+      url(../img/hero.jpg);
+  }
+
   @include respond(phone) {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 85vh, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85vh, 0% 100%);
   }
 
   &__logo-box {
