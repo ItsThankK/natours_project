@@ -436,7 +436,7 @@ body {
   .composition__photo {
     float: left;
     position: absolute;
-    width: 55%;
+    width: 45%;
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
   }
 }
