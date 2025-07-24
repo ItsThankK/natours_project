@@ -1067,6 +1067,11 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .section-about {
+    padding: 30rem 0;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .section-about {
     padding: 40rem 0;
   }
 }
